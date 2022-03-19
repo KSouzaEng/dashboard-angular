@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <span>AppUsers</span>
+  <span class="example-spacer"></span>
+  <button mat-button *ngFor="let item of menu" [routerLink]="item.redirect " class="mx-3">{{ item.nome }}</button>
+  <span class="example-spacer"></span>
+  <button mat-icon-button routerLink="logout" class="example-icon" aria-label="Example icon-button with share icon">
+    <span class="material-icons">
+      logout
+      </span>
+  </button>
+</mat-toolbar>
